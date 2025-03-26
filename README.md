@@ -11,4 +11,10 @@
     "react-router-dom": "^7.3.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
-###
+### Optimization
+    "this webpage is optmizated for 1920x1080px"
+
+### You can view this in the code sandbox or clone the repo for viewing
+    " code: https://codesandbox.io/p/sandbox/fz59wh?file=%2Fpublic%2Findex.html%3A19%2C7"
+    
+   
