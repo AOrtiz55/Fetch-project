@@ -15,7 +15,7 @@
     "this webpage is optmizated for 1920x1080px"
 
 ### You can view this in the code sandbox or clone the repo for viewing
-code: https://codesandbox.io/p/sandbox/fz59wh?file=%2Fpublic%2Findex.html%3A19%2C7
-Webpage: https://fz59wh.csb.app/
+### code: https://codesandbox.io/p/sandbox/fz59wh?file=%2Fpublic%2Findex.html%3A19%2C7
+### Webpage: https://fz59wh.csb.app/
     
    
