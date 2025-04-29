@@ -1,4 +1,4 @@
-### make sure you have these dependencies 
+### Make sure you have these dependencies 
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
