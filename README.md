@@ -41,3 +41,5 @@ This project is powered by **React 19** and modern tooling:
 "react-scripts": "^5.0.1",
 "web-vitals": "^2.1.4"
 
+
+<img width="1363" height="719" alt="image" src="https://github.com/user-attachments/assets/45d9ab7e-0bbc-4af0-b2c3-1cfd3d0af84c" />
