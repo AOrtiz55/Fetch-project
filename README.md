@@ -1,7 +1,6 @@
 # 🐶 Dog Finder App
 
-A modern React application that connects to a **Dog Shelter API** to help users find their future best friend.  
-Built with a clean UI, filtering, sorting, and pagination features for an optimized browsing experience.  
+This application is modern React app that connects to a shelter API to help you discover **dogs in need of a home**. Search across listings, filter by breed, and sign in with a simple name/email flow. The UI is fast, responsive, and focused on getting you to “aww” as quickly as possible.
 
 ---
 
@@ -10,6 +9,20 @@ Built with a clean UI, filtering, sorting, and pagination features for an optimi
 - 💻 **CodeSandbox Project**: [View Code Here](https://codesandbox.io/p/sandbox/fz59wh?file=%2Fpublic%2Findex.html%3A19%2C7)  
 
 ---
+### Features
+- 🔎 **Search** adoptable dogs (API-backed)
+- 🐾 **Filter by breed** to narrow results
+- 🔐 **Lightweight login** (name + email; cookie-based session)
+- ⚡ **Snappy UI** with client-side rendering
+
+### Status / Disclaimer
+- ⚠️ **Navbar links are currently non-functional**.
+- ✅ Primary actions (search, filter, “Click to Save a Dog” button, and login) work as expected.
+
+### Tech
+- React + React Router  
+- Axios for API requests
+
 
 ## ⚙️ Tech Stack & Dependencies
 This project is powered by **React 19** and modern tooling:
@@ -27,3 +40,4 @@ This project is powered by **React 19** and modern tooling:
 "react-router-dom": "^7.3.0",
 "react-scripts": "^5.0.1",
 "web-vitals": "^2.1.4"
+
