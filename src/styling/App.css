@@ -68,7 +68,7 @@ button.submit-button {
   width: 107px;
   border: none;
   margin-right: 7px;
-  background: orange;
+  background: rgb(2 159 175 / 63%);
 }
 i.fas.fa-paw {
   color: aliceblue;
@@ -77,7 +77,7 @@ i#title-paw {
   font-size: 30px;
   margin-left: 9px;
   margin-right: 9px;
-  color: red;
+  color: white;
 }
 input.login-email {
   border-radius: 5px;
@@ -107,7 +107,7 @@ h2.one {
 }
 .login-container {
   width: 100%;
-  height: 20vh;
+  /* height: 20vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -653,7 +653,7 @@ h2.one {
 
 /* Individual Dog Card */
 .dog-card {
-  background-color: #fff;
+  background-color: #ffffff6e;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -711,9 +711,12 @@ h2.one {
 .sidebar-multiselect,
 .sidebar input,
 .sidebar select {
+  background: #ffffff6e;
+  border: none;
   padding: 8px;
   font-size: 14px;
   border-radius: 6px;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 21%);
   overflow-x: auto;
 }
 
@@ -724,7 +727,7 @@ h2.one {
 .toggle-age-btn {
   padding: 8px;
   font-size: 14px;
-  background-color: dodgerblue;
+  background-color: rgb(2 159 175 / 95%);
   border: none;
   cursor: pointer;
   border-radius: 6px;
@@ -770,7 +773,7 @@ h2.one {
 .reset-btn {
   margin-top: 20px;
   padding: 10px;
-  background-color: orange;
+  background-color: #ffa500d9;
   border: none;
   font-size: 14px;
   border-radius: 6px;
@@ -789,7 +792,7 @@ h1.find-dog {
   margin-top: -46px;
 }
 i.fas.fa-paw {
-  color: red;
+  color: white;
   margin-left: 11px;
   margin-right: 11px;
 }
@@ -803,4 +806,330 @@ button {
 }
 button#logout {
   margin-left: 58px;
+  background: #ffffff47;
+  border: none;
+  color: black;
 }
+/*s*/
+
+.lp-root {
+  min-height: 100dvh;
+  background: radial-gradient(
+      1200px 600px at -10% -20%,
+      rgba(242, 237, 233, 0.7),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 110% 10%,
+      rgba(248, 236, 226, 0.8),
+      transparent 55%
+    ),
+    var(--bg);
+}
+
+/* Header */
+.lp-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.lp-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+.lp-logo-paw {
+  filter: saturate(1.1);
+}
+
+.lp-nav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.lp-link {
+  text-decoration: none;
+  color: #505258;
+  font-weight: 600;
+}
+.lp-link:hover {
+  color: #1f2937;
+}
+
+.lp-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.lp-ghost {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 700;
+}
+.lp-icon-btn {
+  border: none;
+  background: #efe9e4;
+  color: #6b7280;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* Hero */
+.lp-hero {
+  max-width: 1200px;
+  margin: 5% auto 60px;
+  padding: 10px 24px 24px;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.lp-copy .lp-pill {
+  display: inline-block;
+  background: var(--pill);
+  color: #1c898a;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.lp-title {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  margin: 16px 0 10px;
+  letter-spacing: -0.02em;
+}
+.lp-accent {
+  color: var(--accent);
+}
+
+.lp-sub {
+  color: var(--muted);
+  max-width: 520px;
+  margin: 0 0 24px;
+  font-size: 1.05rem;
+}
+
+.lp-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, var(--cta-start), var(--cta-end));
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: var(--shadow);
+  transform: translateZ(0);
+  transition: transform 0.15s ease, filter 0.2s ease;
+}
+.lp-cta:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+.lp-cta-arrow {
+  font-size: 1.1em;
+  opacity: 0.95;
+}
+
+/* Media stack */
+.lp-media {
+  display: grid;
+  gap: 22px;
+}
+
+.lp-card {
+  position: relative;
+  border-radius: 10px;
+  padding: 0px !important;
+  background: #eee;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0px 0px 12px #999999;
+  /* position: relative;
+  border-radius: var(--radius-xl);
+  padding: 14px;
+  background: #eee;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  isolation: isolate; */
+}
+.lp-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius-xl) - 8px);
+  display: block;
+  height: 56vh;
+}
+
+.lp-card-blue {
+  background: var(--card-blue);
+}
+.lp-card-orange {
+  background: var(--card-orange);
+}
+
+/* Stat badge (top-right of blue card) */
+.lp-stat {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+  color: #444;
+  font-weight: 600;
+}
+.lp-stat strong {
+  font-size: 1.15rem;
+}
+.lp-stat span {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Certified pill (bottom-left of orange card) */
+.lp-cert {
+  position: absolute;
+  font-family: "Roboto Mono", monospace;
+
+  left: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgb(255 255 255 / 38%);
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.lp-cert:hover {
+  box-shadow: 0 7px 9px rgb(2 159 175 / 95%);
+}
+.lp-cert-icon {
+  font-size: 1.1rem;
+}
+.lp-cert-text {
+  line-height: 1.1;
+}
+.lp-cert-text strong {
+  display: block;
+  font-size: 0.95rem;
+}
+.lp-cert-text small {
+  font-weight: 600;
+
+  color: black;
+  font-family: "Roboto Mono", monospace;
+}
+.lp-cert-arrow {
+  margin-left: 6px;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .lp-hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .lp-copy {
+    text-align: left;
+  }
+  .lp-media {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lp-card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 680px) {
+  .lp-header {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "logo actions" "nav nav";
+    row-gap: 10px;
+  }
+  .lp-logo {
+    grid-area: logo;
+  }
+  .lp-actions {
+    grid-area: actions;
+  }
+  .lp-nav {
+    grid-area: nav;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+  .lp-media {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*new code for september 29*/
+#doge {
+  position: relative;
+  border-radius: 10px;
+  padding: 0px !important;
+  background: #eee;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0px 0px 12px #999999;
+}
+#doge-image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: calc(var(--radius-xl) - 8px);
+  display: block;
+  height: auto !important;
+}
+.lp-cert-trigger {
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+.lp-cert-trigger:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.lp-hint {
+  display: block;
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+.button-title {
+  font-family: "Roboto Mono", monospace;
+}
+h2 {
+  font-family: "Roboto Mono", monospace;
+}
+h1 {
+  font-size: 2rem !important;
+  font-family: "Roboto Mono", monospace;
+}
+button#logout:hover {
+  margin-left: 58px;
+  background: black;
+  border: none;
+  color: white;
+}
+/**/

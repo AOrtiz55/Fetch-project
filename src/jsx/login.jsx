@@ -2,20 +2,19 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import { Link, Outlet } from "react-router-dom";
+import dog from "../images/dog10.jpg";
+import dogtwo from "../images/dog6.jpg";
+import DoggoBackground from "./DoggoBackground";
+import "../style/DoggoBackground.css";
 const BASE_URL = "https://frontend-take-home-service.fetch.com";
 //in the app.css is where i imported the fontawesome icons
 function Login() {
-  useEffect(() => {
-    document.body.classList.add("login-background"); //adding unique background color
-    return () => {
-      document.body.classList.remove("login-background");
-    };
-  }, []);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -33,52 +32,125 @@ function Login() {
   };
 
   return (
-    <div className="login-outer-container">
-      <h2 className="one">
-        Please login to find your new{" "}
-        <i id="title-paw" className="fas fa-paw"></i> Pal friend!
-      </h2>
-      <div className="login-container">
-        {/* <h2 className="two">Login</h2> */}
-        <div className="animation-dog">
-          <div className="dog">
-            <div className="dog__paws">
-              <div className="dog__bl-leg leg">
-                <div className="dog__bl-paw paw"></div>
-                <div className="dog__bl-top top"></div>
-              </div>
-              <div className="dog__bl-leg leg-br">
-                <div className="dog__bl-paw paw"></div>
-                <div className="dog__bl-top top"></div>
-              </div>
-              <div className="dog__fl-leg leg">
-                <div className="dog__fl-paw paw"></div>
-                <div className="dog__fl-top top"></div>
-              </div>
-              <div className="dog__fr-leg leg">
-                <div className="dog__fr-paw paw"></div>
-                <div className="dog__fr-top top-right"></div>
-              </div>
+    <DoggoBackground>
+      <div className="login-outer-container">
+        <div className="login-container">
+          {/* <h2 className="two">Login</h2> */}
+          {/* Header / Navbar */}
+          <header className="lp-header">
+            <div className="lp-logo">
+              <span className="lp-logo-paw">🐾</span>
+              <span>My Pet</span>
             </div>
-            <div className="dog__body">
-              <div className="dog__tail"></div>
+
+            <nav className="lp-nav">
+              <Link to="/" className="lp-link">
+                Home
+              </Link>
+              <a href="#how" className="lp-link">
+                How it works?
+              </a>
+              <a href="#about" className="lp-link">
+                About Us
+              </a>
+              <a href="#faq" className="lp-link">
+                FAQ
+              </a>
+            </nav>
+
+            {/* <div className="lp-actions">
+              <Link to="/login" className="lp-ghost">
+                Create Account
+              </Link>
+            </div> */}
+          </header>
+
+          {/* Hero */}
+          <section className="lp-hero">
+            {/* Left copy */}
+            <div className="lp-copy">
+              <span className="lp-pill">We Luv Furry Friends</span>
+              <h1 className="lp-title">
+                Find a <span className="lp-accent">new</span> pet for you.
+              </h1>
+              <p className="lp-sub">
+                We don't just help you find a dog; we help you find a new member
+                of the family.
+              </p>
+
+              {/* ⬇️ ORANGE CARD MOVED UNDER SUBTITLE */}
+              <figure id="doge" className="lp-card lp-card-orange">
+                <img
+                  id="doge-image"
+                  src={dogtwo}
+                  alt="Puppy in a jacket"
+                  loading="lazy"
+                />
+
+                <figcaption className="lp-cert">
+                  <div className="lp-cert-text">
+                    {/* Trigger */}
+                    <button
+                      type="button"
+                      className="lp-cert-trigger"
+                      aria-expanded={open}
+                      aria-controls="adopt-form"
+                      onClick={() => setOpen((v) => !v)}
+                    >
+                      <strong class="button-title">Click ~ Woof woof</strong>
+                    </button>
+
+                    {/* Revealed on toggle */}
+                    {open && (
+                      <>
+                        <small className="lp-hint">
+                          Please enter your name and email!
+                        </small>
+
+                        <form
+                          id="adopt-form"
+                          className="login-form"
+                          onSubmit={handleLogin}
+                        >
+                          <input
+                            className="login-name"
+                            type="text"
+                            placeholder="Name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                          />
+                          <input
+                            className="login-email"
+                            type="email"
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                          />
+                          <button className="submit-button" type="submit">
+                            Login <i className="fas fa-paw"></i>
+                          </button>
+                        </form>
+
+                        {error && <p role="alert">{error}</p>}
+                      </>
+                    )}
+                  </div>
+                </figcaption>
+              </figure>
             </div>
-            <div className="dog__head">
-              <div className="dog__snout">
-                <div className="dog__nose"></div>
-                <div className="dog__eyes">
-                  <div className="dog__eye-l"></div>
-                  <div className="dog__eye-r"></div>
-                </div>
-              </div>
+
+            {/* Right media — only the blue card now, made taller */}
+            <div className="lp-media">
+              <figure className="lp-card lp-card-blue">
+                <img src={dog} alt="Puppy in a jacket" loading="lazy" />
+                <figcaption className="lp-stat"></figcaption>
+              </figure>
             </div>
-            <div className="dog__head-c">
-              <div className="dog__ear-l"></div>
-              <div className="dog__ear-r"></div>
-            </div>
-          </div>
-        </div>
-        <form className="login-form" onSubmit={handleLogin}>
+          </section>
+
+          {/* <form className="login-form" onSubmit={handleLogin}>
           <input
             className="login-name"
             type="text"
@@ -100,9 +172,10 @@ function Login() {
             Login <i className="fas fa-paw"></i>
           </button>
         </form>
-        {error && <p>{error}</p>}
+        {error && <p>{error}</p>} */}
+        </div>
       </div>
-    </div>
+    </DoggoBackground>
   );
 }
 
