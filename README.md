@@ -1,4 +1,4 @@
-# 🐶 Dog Finder App
+# 🐶 Furry Finder: Dog Finder App
 
 This application is modern React app that connects to a shelter API to help you discover **dogs in need of a home**. Search across listings, filter by breed, and sign in with a simple name/email flow. The UI is fast, responsive, and focused on getting you to “aww” as quickly as possible.
 
@@ -42,4 +42,5 @@ This project is powered by **React 19** and modern tooling:
 "web-vitals": "^2.1.4"
 
 
-<img width="1363" height="719" alt="image" src="https://github.com/user-attachments/assets/45d9ab7e-0bbc-4af0-b2c3-1cfd3d0af84c" />
+
+
