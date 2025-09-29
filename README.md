@@ -18,6 +18,7 @@ This application is modern React app that connects to a shelter API to help you 
 ### Status / Disclaimer
 - ⚠️ **Navbar links are currently non-functional**.
 - ✅ Primary actions (search, filter, “Click to Save a Dog” button, and login) work as expected.
+- - Not optimized for mobile yet.
 
 ### Tech
 - React + React Router  
@@ -44,6 +45,9 @@ This project is powered by **React 19** and modern tooling:
 
 ```
 ![image](https://github.com/user-attachments/assets/7d6d5a6e-9e27-45ea-9739-f000f530b29f)
+![image](https://github.com/user-attachments/assets/3333b24e-14c0-4f90-88d7-f5364a7aacba)
+
+
 
 
 
