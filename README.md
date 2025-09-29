@@ -40,6 +40,7 @@ This project is powered by **React 19** and modern tooling:
 "react-router-dom": "^7.3.0",
 "react-scripts": "^5.0.1",
 "web-vitals": "^2.1.4"
+![image](https://github.com/user-attachments/assets/7d6d5a6e-9e27-45ea-9739-f000f530b29f")
 
 
 
